@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Poppins:wght@300;400;700&display=swap");
+
+// #app {
+// 	font-family: "Lexend Tera", Helvetica, Arial, sans-serif;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// 	text-align: center;
+// 	color: #2c3e50;
+// }
+
+body {
+	font-size: 16px;
+	color: $color;
+	background-color: #09f;
+}
+
+#app {
+	font: {
+		size: 1em;
+		family: "Poppins", helvetica, arial, sans-serif;
+		weight: 400;
+	}
+
+	text-align: center;
+	margin: 0em auto 2em;
+	max-width: 48em;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: #fffa0d;
+}
+
+h1 {
+	font: {
+		size: 2.25em;
+		style: normal;
+		family: "Lexend Tera", helvetica, arial, sans-serif;
+	}
+
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+h1:first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: 1em;
+}
+
+.content {
+	font-size: 1.15em;
+	// line-height: 1.5em;
+	padding: 1.5em 1.75em;
+}
+
+article {
+	text-align: left;
+}
+
+// animation
+[v-cloak] {
+	display: none;
+}
+
+.fade-enter-active {
+	transition: all 0.2s ease;
+}
+
+.fade-enter {
+	transform: scale(0.9);
+}
+
+// responsive
+@media screen and (max-width: 520px) {
+	#app {
+		font-size: 0.85em;
+	}
+}
